@@ -30,7 +30,8 @@
 		"lint": "eslint .",
 		"type-check": "tsc --noEmit",
 		"test": "pnpm build && node --require ./dist/index.js tests/index.ts",
-		"prepack": "clean-pkg-json"
+		"prepack": "clean-pkg-json",
+		"prepare": "npm run build"
 	},
 	"dependencies": {
 		"@esbuild-kit/core-utils": "^2.3.2",
